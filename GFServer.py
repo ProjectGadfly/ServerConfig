@@ -133,8 +133,10 @@ def fetchFederal(state,district):
 @GFServer.route('/services/v1/getstate/',methods=['GET'])
 def getState():
 	key=request.headers.get('key')
+	'''
 	if (key != APIkey):
 		return json.dumps({'error':'Wrong API Key!'})
+	'''
 	address = str(request.args.get(key='address'))
 	address.replace(' ','+')
 	LL=fetchLL(address)
@@ -147,9 +149,11 @@ def getState():
 
 @GFServer.route('/services/v1/getfederal/',methods=['GET'])
 def getFederal():
+	'''
 	key=request.headers.get('key')
 	if (key != APIkey):
 		return json.dumps({'error':'Wrong API Key!'})
+	'''
 	address = str(request.args.get(key='address'))
 	address.replace(' ','+')
 	S=fetchS(address)
