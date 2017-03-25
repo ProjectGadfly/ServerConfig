@@ -130,7 +130,7 @@ def fetchFederal(state,district):
 		fed.append(hhObject.returnDict())
 	return fed
 
-@GFServer.route('/services/v1/getstate/',methods=['GET'])
+@GFServer.route('/v1/getstate/',methods=['GET'])
 def getState():
 	key=request.headers.get('key')
 	'''
@@ -147,7 +147,7 @@ def getState():
 		stData.append(stObject.returnDict())
 	return json.dumps(stData,ensure_ascii=False)
 
-@GFServer.route('/services/v1/getfederal/',methods=['GET'])
+@GFServer.route('/v1/getfederal/',methods=['GET'])
 def getFederal():
 	'''
 	key=request.headers.get('key')
