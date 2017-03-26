@@ -7,5 +7,6 @@ rm -R ServerConfig/
 cd GFServer/services/
 mv GFServer.conf /etc/apache2/sites-available/
 sed -i '1 a\127.0.0.1       GFServer' /etc/hosts
+rm /etc/apache2/sites-enabled/000-default.conf
 a2ensite GFServer
 service apache2 restart
