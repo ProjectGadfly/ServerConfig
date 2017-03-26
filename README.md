@@ -1,6 +1,6 @@
 sudo mkdir /var/www/
 
-sudo apt-get install git
+sudo apt-get -y install git
 
 cd /var/www
 
