@@ -10,4 +10,4 @@ cd ServerConfig/
 
 sudo chmod +x serverconfig.sh
 
-/var/www/ServerConfig/serverconfig.sh
+sudo /var/www/ServerConfig/serverconfig.sh
