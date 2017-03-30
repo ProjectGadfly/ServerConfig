@@ -11,3 +11,9 @@ cd ServerConfig/
 sudo chmod +x serverconfig.sh
 
 sudo /var/www/ServerConfig/serverconfig.sh
+
+
+
+After running the shell script:
+
+sudo mysql_secure_installation

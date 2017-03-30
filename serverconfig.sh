@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "installing needed packages"
-apt-get -y install apache2 libapache2-mod-wsgi-py3 python3-flask python3.5 python3.5-venv python3-requests python3-pip python3-bs4
+apt-get -y install apache2 libapache2-mod-wsgi-py3 python3-flask python3.5 python3.5-venv python3-requests python3-pip python3-bs4 mysql-server python-mysqldb libmysqlclient-dev mysql-client-5.7
 echo "Packages installed"
 cd /var/www/
 mkdir GFServer
