@@ -14,6 +14,8 @@ sudo /var/www/ServerConfig/serverconfig.sh
 
 
 
-After running the shell script:
+############ After running the shell script #########
 
 sudo mysql_secure_installation
+
+########### Now don't forget to add new user and initiate gadfly database using mysql_database.sql ###########
